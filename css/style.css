@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+:root{
+    --border: 1px solid #dce1e4;
+}
+body{
+    font-family: 'Libre Baskerville', serif;
+    background-color: #eaecee;
+    color: #3c3e41;
+    margin: 0;
+    font-size: 15px;
+}
+a{
+    color: #3c3e41;
+    text-decoration: none;
+}
+header{
+    padding:10px;
+    width: calc(100% - 20px);
+    border-bottom: var(--border);
+}
+.rounded-circle {
+    border-radius: 50% !important;
+    width: 50px;
+    height: 50px;
+}
