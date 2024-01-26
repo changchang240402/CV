@@ -8,18 +8,101 @@ body{
     color: #3c3e41;
     margin: 0;
     font-size: 15px;
+    display: flex;
+    justify-content: center;
+
+}
+:root{
+    --border: 1px solid #dce1e4;
 }
 a{
     color: #3c3e41;
     text-decoration: none;
 }
 header{
-    padding:10px;
-    width: calc(100% - 20px);
+    padding:8px;
+    width: 90%;
+    top: 5px;
     border-bottom: var(--border);
+    display: flex;
+    justify-content: space-between;
+    color: linear-gradient(to right,#e9f3f0,#b8e8ee,#7fcce6, #c0a8f1);
+    background-color: transparent !important;
+    border-radius: 30px;
+    margin: auto;
+    align-items: center;
+    position: fixed;
 }
 .rounded-circle {
     border-radius: 50% !important;
-    width: 50px;
-    height: 50px;
+    margin-right: 10px;
 }
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+header ul{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+header ul li{
+    padding: 0 20px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.container{
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+}
+.introduce{
+    display: grid;
+    height: 800px;
+    grid-template-columns: 60% 40%;
+    border-bottom: var(--border);
+    background-image: url('https://media.istockphoto.com/id/617881576/vi/anh/n%E1%BB%81n-m%C3%A0u-n%C6%B0%E1%BB%9Bc-xanh-nh%E1%BA%A1t.jpg?s=612x612&w=0&k=20&c=BqWKuHmItgdcaDqU4LvTRZrm8Q7I9LxLumfmdg8lp7E=');
+    background-size: cover; /* Đảm bảo ảnh nền che phủ toàn bộ phần tử */
+    background-position: center; /* Đặt vị trí của ảnh nền ở giữa */
+    background-repeat: no-repeat; /* Ngăn lặp lại ảnh nền */
+    padding: 0;
+    margin: auto;
+}
+.introduce .gradient{
+    font-weight: 700;
+    margin: auto;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.introduce .gradient h1{
+    font-size: 50px;
+    animation: showLetters 2s steps(21, end) forwards;
+    background: linear-gradient(to right,#bb58cc, #0c85a7);  /*background color from left to right*/
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.introduce .gradient h2{
+    font-size: 25px;
+    animation: showLetters 2s steps(21, end) forwards;
+    animation-delay: 2s;
+    background: linear-gradient(to right,#804beb,#0e0f0f);  /*background color from left to right*/
+    -webkit-background-clip: text;
+    color: transparent;
+}
+@keyframes showLetters{
+    from{
+        max-width: 0;      
+    }to{
+        max-width: 100%;
+    }
+}
+.introduce .avatar{
+    left: 0; 
+    display: flex;
+    align-items: center;
+}
+
