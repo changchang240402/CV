@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 :root{
     --border: 1px solid #dce1e4;
+    --box-shadow: 5px 5px 15px #c1c8d3,
+    -5px -5px 15px #fff;
+    --gradient: linear-gradient(to right,#e4b6ec, #62bad3);
 }
 body{
     font-family: 'Libre Baskerville', serif;
@@ -32,12 +35,21 @@ header{
     margin: auto;
     align-items: center;
     position: fixed;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    box-shadow: var(--box-shadow);
+    
+}
+header:hover{
+    color: #fff;
+    background-image: var(--gradient);
 }
 .rounded-circle {
     border-radius: 50% !important;
     margin-right: 10px;
+    box-shadow: var(--box-shadow);
 }
-.logo {
+header .logo {
     display: flex;
     align-items: center;
     font-weight: 700;
@@ -65,6 +77,7 @@ header ul li{
     grid-template-columns: 60% 40%;
     border-bottom: var(--border);
     background-image: url('https://media.istockphoto.com/id/617881576/vi/anh/n%E1%BB%81n-m%C3%A0u-n%C6%B0%E1%BB%9Bc-xanh-nh%E1%BA%A1t.jpg?s=612x612&w=0&k=20&c=BqWKuHmItgdcaDqU4LvTRZrm8Q7I9LxLumfmdg8lp7E=');
+    /* background-image: url('https://haycafe.vn/wp-content/uploads/2022/03/Anh-nen-mau-hong-pastel-tron-cho-dien-thoai.jpg'); */
     background-size: cover; /* Đảm bảo ảnh nền che phủ toàn bộ phần tử */
     background-position: center; /* Đặt vị trí của ảnh nền ở giữa */
     background-repeat: no-repeat; /* Ngăn lặp lại ảnh nền */
@@ -81,7 +94,7 @@ header ul li{
 .introduce .gradient h1{
     font-size: 50px;
     animation: showLetters 2s steps(21, end) forwards;
-    background: linear-gradient(to right,#bb58cc, #0c85a7);  /*background color from left to right*/
+    background: linear-gradient(to right,#bb58cc, #0c85a7);;  /*background color from left to right*/
     -webkit-background-clip: text;
     color: transparent;
 }
@@ -104,5 +117,45 @@ header ul li{
     left: 0; 
     display: flex;
     align-items: center;
+    
 }
+.btn{
+   border-radius: 8px;
+   transition: 0.5s;
+   border: 2px solid #2da0c3;
+   font-size: 18px;
+   padding: 8px 22px;
+}
+.btn:hover{
+    color: #fff;
+    background-image: var(--gradient);
+}
+.find{
+    margin-top: 75px;
+    
+}
+.contact{
+    margin-top: 30px;
+}
+.contact ul{
+   padding: 0;
+   list-style: none;
+   display: flex;
+}
+.contact ul li{
+    width: 50px;
+    height: 50px;
+    box-shadow: var(--box-shadow);
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.contact ul li:hover{
+    color: #fff;
+    background-image: var(--gradient);
+}
+
 
