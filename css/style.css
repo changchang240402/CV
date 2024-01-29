@@ -64,7 +64,7 @@ header ul li{
     font-size: 15px;
     font-weight: 700;
 }
-.container{
+.bg{
     width: 100%;
     max-width: 100%;
     margin: auto;
@@ -80,10 +80,10 @@ header ul li{
 }
 .introduce{
     display: grid;
-    height: 800px;
+    height: 25%;
     width: 100%;
     grid-template-columns: 60% 40%;
-    border-bottom: var(--border);
+    /* border-bottom: var(--border); */
     padding: 0;
     margin: auto;
     background-image: url('https://media.istockphoto.com/id/617881576/vi/anh/n%E1%BB%81n-m%C3%A0u-n%C6%B0%E1%BB%9Bc-xanh-nh%E1%BA%A1t.jpg?s=612x612&w=0&k=20&c=BqWKuHmItgdcaDqU4LvTRZrm8Q7I9LxLumfmdg8lp7E=');
@@ -172,17 +172,17 @@ header ul li{
     align-items: center;
     text-align: center;
     font-weight: 700;
-    margin-top: 30px;
-    font-size: 22px;
+    margin-top: 50px;
+    font-size: 24px;
 }
 #about{
     width: 80%;
     border-bottom: var(--border);
     box-shadow: var(--box-shadow);
-    background: rgb(224, 245, 244); 
+    background: rgb(221, 251, 255); 
     justify-content: space-between;
     align-items: center;
-    border-radius: 30px;
+    border-radius: 50px;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
@@ -208,6 +208,12 @@ header ul li{
     border-left: 1px dotted #3c3e41;
     padding-left: 20px;
 }
+.item h3{
+    font-size: 20px;
+}
+.item .content{
+    font-size: 18px;
+}
 .item1 ul{
     list-style: none;
     text-align: left;
@@ -215,6 +221,7 @@ header ul li{
 .item1 ul li{
     margin-top: 10px;
     display: flex;
+    font-size: 18px;
 }
 .item1 ul li .icon{
     width: 35px;
@@ -242,11 +249,11 @@ header ul li{
     justify-content: space-evenly;
 }
 .mb-0 .mb-bold{
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 700;
 }
 .mb-0 .mb-small{
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
 }
 .ul-1{
@@ -304,12 +311,11 @@ header ul li{
 .date {
     margin-top: -10px;
     top: 50%;
-    left: -158px;
+    left: -142px;
     font-size: 15px;
     font-weight: 700;
     line-height: 20px;
     position: absolute;
-    padding: 10px;
 }
 .circle {
     margin-top: -10px;
@@ -330,7 +336,7 @@ header ul li{
     position: relative;
 }
 .content-1:before,
-.content-1:after {
+.content-1:after{
   content: "";
   width: 0;
   height: 0;
@@ -346,12 +352,15 @@ header ul li{
     margin-top: -20px;
   }
   
-.content-1:after {
-    border-right-color: #fff;
+/* .content-1:after {
+    border-right-color: rgb(224, 245, 244);
     border-width: 17px;
     top: 50%;
     margin-top: -17px;
-}
+} */
+/* .content-1:hover{
+    border-right-color: #fff;
+} */
 .content-1 p {
     max-height: 0;
     color: transparent;
@@ -390,16 +399,87 @@ label {
 /* skill */
 .skill ul{
     list-style: none;
-    text-align: left;
-}
-.skill ul li{
     display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+
+}
+.skill h4{
+    font-weight: 700;
+    font-size: 20px;
 }
 .skill ul li .skill-1{
-    width: 150px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
+    box-shadow: var(--box-shadow);
+    background-color: #fff;
+    border-radius: 10px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
 }
 .skill ul li .skill-1 img{
     width: 80px;
     height: 80px;
+    
 }
+/* EPX */
+#infor-exp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.exp{
+    width: 80%;
+    height: 250px;
+    border-bottom: var(--border);
+    box-shadow: var(--box-shadow);
+    background: #fdfdfd; 
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    align-items: stretch;
+    justify-items: stretch;
+    transition: 0.5s;
+    border: 2px solid #72cad9;
+    
+}
+.exp:hover{
+    border: 2px solid #fff;
+}
+.exp .company{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px dotted #3c3e41;
+    background:#7fcce6;
+    height: 250px; 
+}
+.exp .company:hover{
+    background:var(--gradient);
+    border-right: 1px dotted #fff;
+    color: #fff;
+}
+.exp .company b{
+   font-size: 20px;
+   font-weight: 700; 
+}
+.exp .company p{
+    font-size: 16px;
+    font-weight: 400; 
+}
+.exp .infor-company{
+    padding: 15px;
+}
+.exp .infor-company p{
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+
